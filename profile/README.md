@@ -1,9 +1,9 @@
 <!-- banner:start -->
 <picture>
-  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/banner-mobile-dark.svg?v=fe89d3ed94e5">
-  <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/banner-mobile-light.svg?v=15218948ef86">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/banner-desktop-dark.svg?v=ffdd0c2a4385">
-  <img src="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/banner-desktop-light.svg?v=31ba3565357b" alt="Afribit Builders. Community software built from Kibera." width="100%">
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/banner-mobile-dark.svg?v=f019aef130cd">
+  <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/banner-mobile-light.svg?v=0575cec5dc69">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/banner-desktop-dark.svg?v=9c40eca35fb5">
+  <img src="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/banner-desktop-light.svg?v=15e9026f8a1f" alt="Afribit Builders. Community software built from Kibera." width="100%">
 </picture>
 <!-- banner:end -->
 
@@ -17,10 +17,10 @@ We build software around the work of a Bitcoin circular economy: earning from wa
 
 <!-- overview:start -->
 <picture>
-  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/overview-mobile-dark.svg?v=1e5625298b74">
-  <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/overview-mobile-light.svg?v=bcb094f1be46">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/overview-desktop-dark.svg?v=9fd7c3962dfd">
-  <img src="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/overview-desktop-light.svg?v=b96056be3f01" alt="10 projects, 7 public repos, 6 non-fork repos." width="100%">
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/overview-mobile-dark.svg?v=061a65851e68">
+  <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/overview-mobile-light.svg?v=51162030de21">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/overview-desktop-dark.svg?v=d6cd933f498f">
+  <img src="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/overview-desktop-light.svg?v=200c379fe58b" alt="10 projects, 7 public repos, 6 non-fork repos." width="100%">
 </picture>
 <!-- overview:end -->
 
@@ -96,19 +96,19 @@ A React Native and backend prototype for NTAG424 contactless card setup and BTCP
 
 <!-- code-mix:start -->
 <picture>
-  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-mobile-dark.svg?v=c21041045090">
-  <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-mobile-light.svg?v=911099370d76">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-desktop-dark.svg?v=c20ec124313f">
-  <img src="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-desktop-light.svg?v=0db8561f464e" alt="Public code language bars; private source and the Blink fork are excluded." width="100%">
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-mobile-dark.svg?v=ece607ed9e39">
+  <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-mobile-light.svg?v=0e7f28cb60bf">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-desktop-dark.svg?v=ede8a5637604">
+  <img src="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-desktop-light.svg?v=1840d9ec5852" alt="Public code language bars; private source and the Blink fork are excluded." width="100%">
 </picture>
 <!-- code-mix:end -->
 
 <!-- activity:start -->
 <picture>
-  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-mobile-dark.svg?v=7902bd7bd6bf">
-  <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-mobile-light.svg?v=54f94be83879">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-desktop-dark.svg?v=5b28385d7aaf">
-  <img src="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-desktop-light.svg?v=198f3a29e2b3" alt="Weekly public commit activity; current week is partial, not a measure of community impact." width="100%">
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-mobile-dark.svg?v=0a6e76f2633e">
+  <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-mobile-light.svg?v=cc71571816df">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-desktop-dark.svg?v=c89231db3d2e">
+  <img src="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-desktop-light.svg?v=b2af85c06140" alt="Weekly public commit activity; current week is partial, not a measure of community impact." width="100%">
 </picture>
 <!-- activity:end -->
 
