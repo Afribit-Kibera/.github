@@ -96,19 +96,19 @@ A React Native and backend prototype for NTAG424 contactless card setup and BTCP
 
 <!-- code-mix:start -->
 <picture>
-  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-mobile-dark.svg?v=ece607ed9e39">
-  <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-mobile-light.svg?v=0e7f28cb60bf">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-desktop-dark.svg?v=ede8a5637604">
-  <img src="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-desktop-light.svg?v=1840d9ec5852" alt="Public code language bars; private source and the Blink fork are excluded." width="100%">
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-mobile-dark.svg?v=0dfa2b979077">
+  <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-mobile-light.svg?v=59f1b4380e6b">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-desktop-dark.svg?v=ea703e4e7185">
+  <img src="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-desktop-light.svg?v=df8233a542bb" alt="Language composition and leading language per public project; private source and the Blink fork are excluded." width="100%">
 </picture>
 <!-- code-mix:end -->
 
 <!-- activity:start -->
 <picture>
-  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-mobile-dark.svg?v=0a6e76f2633e">
-  <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-mobile-light.svg?v=cc71571816df">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-desktop-dark.svg?v=c89231db3d2e">
-  <img src="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-desktop-light.svg?v=b2af85c06140" alt="Weekly public commit activity; current week is partial, not a measure of community impact." width="100%">
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-mobile-dark.svg?v=fbf88dfbbb77">
+  <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-mobile-light.svg?v=66036c309bcf">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-desktop-dark.svg?v=2c1354132c40">
+  <img src="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-desktop-light.svg?v=e94d9478df92" alt="Weekly public commit trend and repository heatmap; current week is partial, not a measure of community impact." width="100%">
 </picture>
 <!-- activity:end -->
 
@@ -129,8 +129,6 @@ Snapshot: **2026-10-21 UTC**. TypeScript 84.0%, JavaScript 4.9%, Python 4.1%, CS
 <a href="https://github.com/novyrix"><img src="https://avatars.githubusercontent.com/u/207522836?v=4&amp;s=128" width="64" height="64" alt="novyrix"></a>
 
 Public code contributions: [@novyrix](https://github.com/novyrix).
-
-AI and automation assistance: [@codex](https://github.com/codex). These accounts are not counted as people.
 
 Attribution comes from the original public repositories, not a complete team roster. Blink's upstream contributors remain credited in the wallet repository.
 <!-- contributors:end -->

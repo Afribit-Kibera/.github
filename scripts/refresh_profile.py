@@ -1,7 +1,7 @@
 """Build the profile's own chart assets from an explicitly public GitHub dataset."""
 
 import argparse
-from collections import Counter, defaultdict
+from collections import Counter
 from datetime import datetime, timedelta, timezone
 import base64
 import hashlib
@@ -9,7 +9,7 @@ import html
 import json
 from pathlib import Path
 import subprocess
-import time
+from urllib.parse import urlencode
 import xml.etree.ElementTree as ET
 
 
@@ -21,12 +21,6 @@ ASSETS = PROFILE / "assets"
 BASE = "https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets"
 NS = "http://www.w3.org/2000/svg"
 ET.register_namespace("", NS)
-COLORS = {
-    "TypeScript": "#3178C6", "JavaScript": "#D5AD13", "CSS": "#8A60CF",
-    "Python": "#32A4B7", "HTML": "#E46B43", "RouterOS Script": "#30A46C",
-    "PowerShell": "#A971BA", "Shell": "#78972C", "PLpgSQL": "#D97196",
-    "Java": "#BD8A5E", "Dockerfile": "#4B9EBA", "Other": "#87918E",
-}
 PALETTES = {
     "light": {"bg":"#F6F9F8", "ink":"#15231D", "muted":"#53655D", "line":"#D6E1DA", "accent":"#146A48", "track":"#E2EAE6"},
     "dark": {"bg":"#101C17", "ink":"#F4F8F5", "muted":"#B5C6BC", "line":"#35483D", "accent":"#7ED7A5", "track":"#2A3B31"},
@@ -43,13 +37,14 @@ def api(endpoint):
 def paged(endpoint):
     values = []
     for page in range(1, 101):
-        result = api(f"{endpoint}?per_page=100&page={page}")
+        separator = "&" if "?" in endpoint else "?"
+        result = api(f"{endpoint}{separator}per_page=100&page={page}")
         if not isinstance(result, list):
             raise ValueError(f"Expected a public list: {endpoint}")
         values.extend(result)
         if len(result) < 100:
             return values
-    raise RuntimeError("Pagination limit reached; refusing to publish incomplete attribution")
+    raise RuntimeError("Pagination limit reached; refusing to publish incomplete public data")
 
 
 def public_metadata(value):
@@ -65,7 +60,30 @@ def normalise_week(timestamp):
     return (date - timedelta(days=(date.weekday() + 1) % 7)).isoformat()
 
 
+def activity_from_commits(repo, weeks, as_of):
+    start = datetime.fromisoformat(weeks[0]).replace(tzinfo=timezone.utc)
+    query = urlencode({"sha":repo["default_branch"], "since":start.isoformat(), "until":as_of.isoformat()})
+    result = paged(f"repos/{repo['full_name']}/commits?{query}")
+    counts = {week:0 for week in weeks}
+    seen = set()
+    for commit in result:
+        sha = commit["sha"]
+        if sha in seen:
+            continue
+        seen.add(sha)
+        date = datetime.fromisoformat(commit["commit"]["committer"]["date"].replace("Z", "+00:00"))
+        if date.tzinfo is None:
+            raise ValueError("Commit date must include a timezone")
+        if len(commit["parents"]) > 1 or not start <= date <= as_of:
+            continue
+        week = normalise_week(date.timestamp())
+        if week in counts:
+            counts[week] += 1
+    return counts
+
+
 def collect():
+    as_of = datetime.now(timezone.utc).replace(microsecond=0)
     repositories = []
     accounts = {}
     language_totals = Counter()
@@ -81,33 +99,31 @@ def collect():
             for account in paged(endpoint + "/contributors"):
                 login = account["login"]
                 bot = account.get("type") == "Bot" or login.lower() in CONFIG["automation_logins"]
-                entry = accounts.setdefault(login, {"login":login, "url":account["html_url"], "avatar":account["avatar_url"], "automation":bot, "repositories":[]})
+                if bot:
+                    continue
+                entry = accounts.setdefault(login, {"login":login, "url":account["html_url"], "avatar":account["avatar_url"], "automation":False, "repositories":[]})
                 entry["repositories"].append(record["name"])
         repositories.append(record)
         print(f"Read public metadata: {record['full_name']}", flush=True)
 
     originals = [repo for repo in repositories if not repo["fork"]]
-    weekly = Counter()
+    last_week = datetime.fromisoformat(normalise_week(as_of.timestamp()))
+    weeks = [(last_week - timedelta(weeks=11-index)).date().isoformat() for index in range(12)]
+    repository_weeks = {}
     unavailable = []
     for repo in originals:
-        result = None
-        for attempt in range(3):
-            result = api(f"repos/{repo['full_name']}/stats/commit_activity")
-            if isinstance(result, list) and result:
-                break
-            if attempt < 2:
-                time.sleep(2)
-        if not isinstance(result, list) or not result:
+        try:
+            repository_weeks[repo["name"]] = activity_from_commits(repo, weeks, as_of)
+        except (RuntimeError, ValueError, KeyError, TypeError):
             unavailable.append(repo["name"])
-            continue
-        for week in result:
-            weekly[normalise_week(week["week"])] += week["total"]
+        print(f"Read public activity: {repo['name']}", flush=True)
 
     complete_activity = not unavailable
-    activity = [{"week":week, "commits":count} for week, count in sorted(weekly.items())[-12:]] if complete_activity else []
+    activity = [{"week":week, "commits":sum(counts[week] for counts in repository_weeks.values())} for week in weeks] if complete_activity else []
+    matrix = [{"repository":repo["name"], "project":repo["project"], "commits":[repository_weeks[repo["name"]][item["week"]] for item in activity]} for repo in originals] if complete_activity else []
     return {
-        "schema_version":1,
-        "generated_at":datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "schema_version":2,
+        "generated_at":as_of.isoformat(timespec="seconds"),
         "scope":"Public project repositories only; excludes .github and private source. Forks are excluded from language, activity and contributor aggregates.",
         "showcased_projects":len(CONFIG["projects"]),
         "public_repositories":len(repositories),
@@ -115,7 +131,7 @@ def collect():
         "repositories":repositories,
         "languages":dict(language_totals.most_common()),
         "contributors":sorted(accounts.values(), key=lambda item:(item["automation"], item["login"].lower())),
-        "activity":{"complete":complete_activity, "unavailable_repositories":unavailable, "weeks":activity},
+        "activity":{"complete":complete_activity, "unavailable_repositories":unavailable, "method":"Default-branch non-merge commits by committer date; UTC Sunday weeks; all authors included", "weeks":activity, "repositories":matrix},
     }
 
 
@@ -219,96 +235,25 @@ def community_header(theme, mobile):
     return c
 
 
-def segments(c, x, y, width, height, values):
-    total = sum(values.values())
-    c.rect(x, y, width, height, c.p["track"], rx=2)
-    offset = x
-    for name, count in values.items():
-        size = width * count / total if total else 0
-        c.rect(round(offset, 3), y, round(size, 3), height, COLORS.get(name, COLORS["Other"]))
-        offset += size
-
-
-def language_buckets(values, names):
-    result = {name:values.get(name,0) for name in names}
-    remaining = sum(value for name,value in values.items() if name not in names)
-    if remaining:
-        result["Other"] = remaining
-    return result
-
-
-def source_mix(data, theme, mobile):
-    originals = [repo for repo in data["repositories"] if not repo["fork"]]
-    width = 360 if mobile else 900
-    height = 866 if mobile else 568
-    c = Canvas(width, height, theme, "Public code mix", "Language percentages are shares of GitHub-detected source bytes, excluding private repositories and the Blink fork.")
-    pad = 24 if mobile else 32
-    c.text(pad, 40, "Public code mix", 24, weight=700)
-    c.text(pad, 66, "Detected source bytes, not authorship.", 13 if mobile else 16, c.p["muted"])
-    total = sum(data["languages"].values())
-    top = list(data["languages"].items())[:5]
-    names = [name for name,_ in top]
-    segments(c, pad, 88, width-pad*2, 18, language_buckets(data["languages"],names))
-    other = sum(data["languages"].values()) - sum(count for _,count in top)
-    legend = top + ([("Other", other)] if other else [])
-    for index, (name, count) in enumerate(legend):
-        x = pad + (index % (2 if mobile else 3)) * (160 if mobile else 288)
-        y = 140 + (index // (2 if mobile else 3))*34
-        c.rect(x, y-11, 10, 10, COLORS.get(name, COLORS["Other"]), rx=1)
-        c.text(x+17, y, name, 12 if mobile else 16)
-        label = f"{count/total*100:.1f}%" if total else "0.0%"
-        c.text(x+140 if mobile else x+250, y, label, 12 if mobile else 16, c.p["muted"], text_anchor="end")
-    start = 264 if mobile else 238
-    c.line(pad, start-24, width-pad, start-24)
-    for index, repo in enumerate(originals):
-        y = start + index*(92 if mobile else 48)
-        c.text(pad, y, repo["project"], 15 if mobile else 17, weight=700)
-        if mobile:
-            segments(c, pad, y+14, width-pad*2, 12, language_buckets(repo["languages"],names))
-            top_language = max(repo["languages"], key=repo["languages"].get, default="No source detected")
-            c.text(pad, y+49, top_language, 13, c.p["muted"])
-        else:
-            segments(c, 296, y-13, width-328, 15, language_buckets(repo["languages"],names))
-    c.text(pad, height-24, "Private source and the Blink fork are excluded.", 12 if mobile else 15, c.p["muted"])
-    return c
-
-
-def activity_chart(data, theme, mobile):
-    width, height = (360, 328) if mobile else (900, 314)
-    c = Canvas(width, height, theme, "Public build activity", "Weekly commits in original public project repositories. The current week is partial; fork and private history are excluded.")
-    pad = 24 if mobile else 32
-    c.text(pad, 40, "Public build activity", 24, weight=700)
-    c.text(pad, 65, "Weekly commits / current week partial", 13 if mobile else 16, c.p["muted"])
-    activity = data["activity"]
-    if not activity["complete"]:
-        c.text(pad, 131, "GitHub is preparing activity data.", 16, weight=700)
-        c.text(pad, 164, "No partial totals are shown as complete.", 13, c.p["muted"])
-        c.text(pad, 198, "Language bars and the catalogue are current.", 12 if mobile else 16, c.p["muted"])
-        return c
-    weeks = activity["weeks"]
-    largest = max((week["commits"] for week in weeks), default=0)
-    baseline, available_height = 236, 120
-    chart_width = width-pad*2
-    pitch = chart_width/max(len(weeks), 1)
-    c.line(pad, baseline, width-pad, baseline)
-    for index, week in enumerate(weeks):
-        x = pad+index*pitch+3
-        h = week["commits"]/largest*available_height if largest else 0
-        c.rect(x, baseline-h, max(pitch-7, 5), h, c.p["accent"], rx=2)
-        c.text(x+(pitch-7)/2, baseline-h-8, week["commits"], 11 if mobile else 15, c.p["muted"], text_anchor="middle")
-    for index in [0, len(weeks)//2, len(weeks)-1]:
-        if not weeks:
-            break
-        date = datetime.fromisoformat(weeks[index]["week"]).strftime("%d %b")
-        anchor = "start" if index == 0 else "end" if index == len(weeks)-1 else "middle"
-        x = pad if index == 0 else width-pad if index == len(weeks)-1 else width/2
-        c.text(x, 260, date, 12 if mobile else 15, c.p["muted"], text_anchor=anchor)
-    c.text(pad, height-18, f"{data['original_repositories']} original public repositories. Not an impact measure.", 11 if mobile else 14, c.p["muted"])
-    return c
+def render_charts(data):
+    result = subprocess.run(["node", str(ROOT / "scripts" / "render_charts.mjs")], input=json.dumps(data), capture_output=True, text=True, encoding="utf-8", timeout=60, cwd=ROOT)
+    if result.returncode:
+        raise RuntimeError("Chart rendering failed; no README was published: " + result.stderr[-1200:])
+    for filename, chart in json.loads(result.stdout).items():
+        root = ET.fromstring(chart["svg"])
+        root.set("role", "img")
+        root.set("aria-labelledby", "title description")
+        title = ET.Element(f"{{{NS}}}title", {"id":"title"})
+        title.text = chart["title"]
+        description = ET.Element(f"{{{NS}}}desc", {"id":"description"})
+        description.text = chart["description"]
+        root.insert(0, title)
+        root.insert(1, description)
+        ET.ElementTree(root).write(ASSETS / filename, encoding="utf-8", xml_declaration=True)
 
 
 def asset_url(filename):
-    version = hashlib.sha256((ASSETS / filename).read_bytes()).hexdigest()[:12]
+    version = hashlib.sha256((ASSETS / filename).read_text(encoding="utf-8").encode("utf-8")).hexdigest()[:12]
     return f"{BASE}/{filename}?v={version}"
 
 
@@ -335,7 +280,7 @@ def update_region(readme, name, content):
 def generate_readme(data):
     path = PROFILE / "README.md"
     readme = (PROFILE / "README.template.md").read_text(encoding="utf-8")
-    for name, alt in [("banner","Afribit Builders. Community software built from Kibera."),("overview",f"{data['showcased_projects']} projects, {data['public_repositories']} public repos, {data['original_repositories']} non-fork repos."),("code-mix","Public code language bars; private source and the Blink fork are excluded."),("activity","Weekly public commit activity; current week is partial, not a measure of community impact.")]:
+    for name, alt in [("banner","Afribit Builders. Community software built from Kibera."),("overview",f"{data['showcased_projects']} projects, {data['public_repositories']} public repos, {data['original_repositories']} non-fork repos."),("code-mix","Language composition and leading language per public project; private source and the Blink fork are excluded."),("activity","Weekly public commit trend and repository heatmap; current week is partial, not a measure of community impact.")]:
         readme = update_region(readme, name, picture(name, alt))
     catalogue = []
     previous_group = None
@@ -352,15 +297,13 @@ def generate_readme(data):
             links.append("Source private")
         catalogue.extend([f"**{project['name']}**", f"{project['summary']}", "", " | ".join(links), ""])
     readme = update_region(readme, "catalogue", "\n".join(catalogue))
-    humans = [entry for entry in data["contributors"] if not entry["automation"]]
-    bots = [entry for entry in data["contributors"] if entry["automation"]]
+    humans = [entry for entry in data["contributors"] if not entry["automation"] and entry["login"].lower() not in CONFIG["automation_logins"]]
     people = []
     for person in humans:
         login = html.escape(person["login"], quote=True)
         people.append(f'<a href="{person["url"]}"><img src="{person["avatar"]}&amp;s=128" width="64" height="64" alt="{login}"></a>')
-    people.extend(["", "Public code contributions: " + ", ".join(f"[@{entry['login']}]({entry['url']})" for entry in humans) + "."])
-    if bots:
-        people.extend(["", "AI and automation assistance: " + ", ".join(f"[@{entry['login']}]({entry['url']})" for entry in bots) + ". These accounts are not counted as people."])
+    if humans:
+        people.extend(["", "Public code contributions: " + ", ".join(f"[@{entry['login']}]({entry['url']})" for entry in humans) + "."])
     people.extend(["", "Attribution comes from the original public repositories, not a complete team roster. Blink's upstream contributors remain credited in the wallet repository."])
     readme = update_region(readme, "contributors", "\n".join(people))
     source_text = ", ".join(f"{name} {count/sum(data['languages'].values())*100:.1f}%" for name,count in list(data["languages"].items())[:5])
@@ -374,8 +317,9 @@ def render(data):
     for theme in PALETTES:
         for mobile in [False, True]:
             suffix = f"{'mobile' if mobile else 'desktop'}-{theme}.svg"
-            for name, canvas in [("banner",header(theme,mobile)),("community",community_header(theme,mobile)),("overview",overview(data,theme,mobile)),("code-mix",source_mix(data,theme,mobile)),("activity",activity_chart(data,theme,mobile))]:
+            for name, canvas in [("banner",header(theme,mobile)),("community",community_header(theme,mobile)),("overview",overview(data,theme,mobile))]:
                 canvas.write(f"{name}-{suffix}")
+    render_charts(data)
     generate_readme(data)
 
 

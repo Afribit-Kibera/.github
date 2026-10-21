@@ -1,89 +1,73 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="360" height="866" viewBox="0 0 360 866" role="img" aria-labelledby="title description">
-  <title id="title">Public code mix</title>
-  <desc id="description">Language percentages are shares of GitHub-detected source bytes, excluding private repositories and the Blink fork.</desc>
-  <rect x="0" y="0" width="360" height="866" fill="#F6F9F8" rx="6" />
-  <text x="24" y="40" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Public code mix</text>
-  <text x="24" y="66" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400">Detected source bytes, not authorship.</text>
-  <rect x="24" y="88" width="312" height="18" fill="#E2EAE6" rx="2" />
-  <rect x="24" y="88" width="262.037" height="18" fill="#3178C6" />
-  <rect x="286.037" y="88" width="15.157" height="18" fill="#D5AD13" />
-  <rect x="301.194" y="88" width="12.737" height="18" fill="#32A4B7" />
-  <rect x="313.931" y="88" width="8.212" height="18" fill="#8A60CF" />
-  <rect x="322.143" y="88" width="4.915" height="18" fill="#30A46C" />
-  <rect x="327.058" y="88" width="8.942" height="18" fill="#87918E" />
-  <rect x="24" y="129" width="10" height="10" fill="#3178C6" rx="1" />
-  <text x="41" y="140" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400">TypeScript</text>
-  <text x="164" y="140" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="end">84.0%</text>
-  <rect x="184" y="129" width="10" height="10" fill="#D5AD13" rx="1" />
-  <text x="201" y="140" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400">JavaScript</text>
-  <text x="324" y="140" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="end">4.9%</text>
-  <rect x="24" y="163" width="10" height="10" fill="#32A4B7" rx="1" />
-  <text x="41" y="174" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400">Python</text>
-  <text x="164" y="174" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="end">4.1%</text>
-  <rect x="184" y="163" width="10" height="10" fill="#8A60CF" rx="1" />
-  <text x="201" y="174" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400">CSS</text>
-  <text x="324" y="174" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="end">2.6%</text>
-  <rect x="24" y="197" width="10" height="10" fill="#30A46C" rx="1" />
-  <text x="41" y="208" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400">RouterOS Script</text>
-  <text x="164" y="208" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="end">1.6%</text>
-  <rect x="184" y="197" width="10" height="10" fill="#87918E" rx="1" />
-  <text x="201" y="208" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400">Other</text>
-  <text x="324" y="208" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="end">2.9%</text>
-  <line x1="24" y1="240" x2="336" y2="240" stroke="#D6E1DA" stroke-width="1" />
-  <text x="24" y="264" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700">Taka Sats</text>
-  <rect x="24" y="278" width="312" height="12" fill="#E2EAE6" rx="2" />
-  <rect x="24" y="278" width="298.087" height="12" fill="#3178C6" />
-  <rect x="322.087" y="278" width="7.775" height="12" fill="#D5AD13" />
-  <rect x="329.862" y="278" width="0.0" height="12" fill="#32A4B7" />
-  <rect x="329.862" y="278" width="0.637" height="12" fill="#8A60CF" />
-  <rect x="330.499" y="278" width="0.0" height="12" fill="#30A46C" />
-  <rect x="330.499" y="278" width="5.501" height="12" fill="#87918E" />
-  <text x="24" y="313" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400">TypeScript</text>
-  <text x="24" y="356" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700">3 West Satenet</text>
-  <rect x="24" y="370" width="312" height="12" fill="#E2EAE6" rx="2" />
-  <rect x="24" y="370" width="160.761" height="12" fill="#3178C6" />
-  <rect x="184.761" y="370" width="26.786" height="12" fill="#D5AD13" />
-  <rect x="211.547" y="370" width="64.908" height="12" fill="#32A4B7" />
-  <rect x="276.455" y="370" width="13.879" height="12" fill="#8A60CF" />
-  <rect x="290.334" y="370" width="25.049" height="12" fill="#30A46C" />
-  <rect x="315.382" y="370" width="20.618" height="12" fill="#87918E" />
-  <text x="24" y="405" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400">TypeScript</text>
-  <text x="24" y="448" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700">Afribitools</text>
-  <rect x="24" y="462" width="312" height="12" fill="#E2EAE6" rx="2" />
-  <rect x="24" y="462" width="301.803" height="12" fill="#3178C6" />
-  <rect x="325.803" y="462" width="0.951" height="12" fill="#D5AD13" />
-  <rect x="326.754" y="462" width="0.0" height="12" fill="#32A4B7" />
-  <rect x="326.754" y="462" width="5.044" height="12" fill="#8A60CF" />
-  <rect x="331.798" y="462" width="0.0" height="12" fill="#30A46C" />
-  <rect x="331.798" y="462" width="4.202" height="12" fill="#87918E" />
-  <text x="24" y="497" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400">TypeScript</text>
-  <text x="24" y="540" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700">BTCReg</text>
-  <rect x="24" y="554" width="312" height="12" fill="#E2EAE6" rx="2" />
-  <rect x="24" y="554" width="295.278" height="12" fill="#3178C6" />
-  <rect x="319.278" y="554" width="2.648" height="12" fill="#D5AD13" />
-  <rect x="321.926" y="554" width="0.0" height="12" fill="#32A4B7" />
-  <rect x="321.926" y="554" width="4.039" height="12" fill="#8A60CF" />
-  <rect x="325.966" y="554" width="0.0" height="12" fill="#30A46C" />
-  <rect x="325.966" y="554" width="10.034" height="12" fill="#87918E" />
-  <text x="24" y="589" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400">TypeScript</text>
-  <text x="24" y="632" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700">Website &amp; Bitcoin Studio</text>
-  <rect x="24" y="646" width="312" height="12" fill="#E2EAE6" rx="2" />
-  <rect x="24" y="646" width="238.183" height="12" fill="#3178C6" />
-  <rect x="262.183" y="646" width="42.955" height="12" fill="#D5AD13" />
-  <rect x="305.138" y="646" width="0.0" height="12" fill="#32A4B7" />
-  <rect x="305.138" y="646" width="28.813" height="12" fill="#8A60CF" />
-  <rect x="333.951" y="646" width="0.0" height="12" fill="#30A46C" />
-  <rect x="333.951" y="646" width="2.049" height="12" fill="#87918E" />
-  <text x="24" y="681" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400">TypeScript</text>
-  <text x="24" y="724" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700">Afribit NFC</text>
-  <rect x="24" y="738" width="312" height="12" fill="#E2EAE6" rx="2" />
-  <rect x="24" y="738" width="255.127" height="12" fill="#3178C6" />
-  <rect x="279.127" y="738" width="30.139" height="12" fill="#D5AD13" />
-  <rect x="309.266" y="738" width="0.0" height="12" fill="#32A4B7" />
-  <rect x="309.266" y="738" width="0.0" height="12" fill="#8A60CF" />
-  <rect x="309.266" y="738" width="0.0" height="12" fill="#30A46C" />
-  <rect x="309.266" y="738" width="26.734" height="12" fill="#87918E" />
-  <text x="24" y="773" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400">TypeScript</text>
-  <text x="24" y="842" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400">Private source and the Blink fork are excluded.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="1140" version="1.1" baseProfile="full" viewBox="0 0 360 1140" role="img" aria-labelledby="title description">
+<title id="title">Public code mix</title><desc id="description">Language shares of detected public source bytes. Each project ring shows its leading language versus all its other languages. Private code and the Blink fork are excluded.</desc><rect width="360" height="1140" x="0" y="0" fill="#F6F9F8" />
+<text dominant-baseline="central" text-anchor="start" style="font: 700 26px Arial, Helvetica, sans-serif" xml:space="preserve" transform="translate(24 38)" fill="#15231D">Inside the code</text>
+<text dominant-baseline="central" text-anchor="start" style="font: 400 15px Arial, Helvetica, sans-serif" xml:space="preserve" transform="translate(24 68)" fill="#53655D">Public source, measured by language.</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: 700 38px Arial, Helvetica, sans-serif" transform="translate(180 199)" fill="#15231D">12</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: 400 16px Arial, Helvetica, sans-serif" transform="translate(180 235)" fill="#53655D">languages</text>
+<circle cx="28" cy="350" r="4" fill="#438FD3" class="zr2-cls-2" />
+<text dominant-baseline="central" text-anchor="start" style="font: 400 13px Arial, Helvetica, sans-serif" transform="translate(40 350)" fill="#15231D">TypeScript</text>
+<text dominant-baseline="central" text-anchor="start" style="font: 700 15px Arial, Helvetica, sans-serif" transform="translate(40 371)" fill="#15231D">84.0%</text>
+<circle cx="192" cy="350" r="4" fill="#D6AD23" class="zr2-cls-2" />
+<text dominant-baseline="central" text-anchor="start" style="font: 400 13px Arial, Helvetica, sans-serif" transform="translate(204 350)" fill="#15231D">JavaScript</text>
+<text dominant-baseline="central" text-anchor="start" style="font: 700 15px Arial, Helvetica, sans-serif" transform="translate(204 371)" fill="#15231D">4.9%</text>
+<circle cx="28" cy="403" r="4" fill="#31A7B5" class="zr2-cls-2" />
+<text dominant-baseline="central" text-anchor="start" style="font: 400 13px Arial, Helvetica, sans-serif" transform="translate(40 403)" fill="#15231D">Python</text>
+<text dominant-baseline="central" text-anchor="start" style="font: 700 15px Arial, Helvetica, sans-serif" transform="translate(40 424)" fill="#15231D">4.1%</text>
+<circle cx="192" cy="403" r="4" fill="#A881D6" class="zr2-cls-2" />
+<text dominant-baseline="central" text-anchor="start" style="font: 400 13px Arial, Helvetica, sans-serif" transform="translate(204 403)" fill="#15231D">CSS</text>
+<text dominant-baseline="central" text-anchor="start" style="font: 700 15px Arial, Helvetica, sans-serif" transform="translate(204 424)" fill="#15231D">2.6%</text>
+<circle cx="28" cy="456" r="4" fill="#43B783" class="zr2-cls-2" />
+<text dominant-baseline="central" text-anchor="start" style="font: 400 13px Arial, Helvetica, sans-serif" xml:space="preserve" transform="translate(40 456)" fill="#15231D">RouterOS Script</text>
+<text dominant-baseline="central" text-anchor="start" style="font: 700 15px Arial, Helvetica, sans-serif" transform="translate(40 477)" fill="#15231D">1.6%</text>
+<circle cx="192" cy="456" r="4" fill="#899995" class="zr2-cls-2" />
+<text dominant-baseline="central" text-anchor="start" style="font: 400 13px Arial, Helvetica, sans-serif" transform="translate(204 456)" fill="#15231D">Other</text>
+<text dominant-baseline="central" text-anchor="start" style="font: 700 15px Arial, Helvetica, sans-serif" transform="translate(204 477)" fill="#15231D">2.9%</text>
+<path d="M24 498L336 498" fill="none" pointer-events="visible" stroke="#D6E1DA" class="zr2-cls-2" />
+<text dominant-baseline="central" text-anchor="start" style="font: 700 18px Arial, Helvetica, sans-serif" xml:space="preserve" transform="translate(24 529)" fill="#15231D">Leading language by project</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: 700 22px Arial, Helvetica, sans-serif" transform="translate(100 606)" fill="#15231D">96%</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: 700 14px Arial, Helvetica, sans-serif" xml:space="preserve" transform="translate(100 672)" fill="#15231D">Taka Sats</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: 400 13px Arial, Helvetica, sans-serif" transform="translate(100 694)" fill="#53655D">TypeScript</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: 700 22px Arial, Helvetica, sans-serif" transform="translate(260 606)" fill="#15231D">52%</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: 700 14px Arial, Helvetica, sans-serif" xml:space="preserve" transform="translate(260 672)" fill="#15231D">3 West Satenet</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: 400 13px Arial, Helvetica, sans-serif" transform="translate(260 694)" fill="#53655D">TypeScript</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: 700 22px Arial, Helvetica, sans-serif" transform="translate(100 776)" fill="#15231D">97%</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: 700 14px Arial, Helvetica, sans-serif" transform="translate(100 842)" fill="#15231D">Afribitools</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: 400 13px Arial, Helvetica, sans-serif" transform="translate(100 864)" fill="#53655D">TypeScript</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: 700 22px Arial, Helvetica, sans-serif" transform="translate(260 776)" fill="#15231D">95%</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: 700 14px Arial, Helvetica, sans-serif" transform="translate(260 842)" fill="#15231D">BTCReg</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: 400 13px Arial, Helvetica, sans-serif" transform="translate(260 864)" fill="#53655D">TypeScript</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: 700 22px Arial, Helvetica, sans-serif" transform="translate(100 946)" fill="#15231D">76%</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: 700 14px Arial, Helvetica, sans-serif" xml:space="preserve" transform="translate(100 1012)" fill="#15231D">Website &amp; Studio</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: 400 13px Arial, Helvetica, sans-serif" transform="translate(100 1034)" fill="#53655D">TypeScript</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: 700 22px Arial, Helvetica, sans-serif" transform="translate(260 946)" fill="#15231D">82%</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: 700 14px Arial, Helvetica, sans-serif" xml:space="preserve" transform="translate(260 1012)" fill="#15231D">Afribit NFC</text>
+<text dominant-baseline="central" text-anchor="middle" style="font: 400 13px Arial, Helvetica, sans-serif" transform="translate(260 1034)" fill="#53655D">TypeScript</text>
+<text dominant-baseline="central" text-anchor="start" style="font: 400 13px Arial, Helvetica, sans-serif" xml:space="preserve" transform="translate(24 1114)" fill="#53655D">Language bytes, not authorship or impact.</text>
+<path d="M180 110A101 101 0 1 1 94.7 157L116.6 170.9A75 75 0 1 0 180 136Z" fill="#438FD3" stroke="#F6F9F8" stroke-width="2" stroke-linejoin="round" ecmeta_series_index="0" ecmeta_data_index="0" ecmeta_ssr_type="chart" ecmeta_silent="true" class="zr2-cls-2" />
+<path d="M94.7 157A101 101 0 0 1 114.9 133.8L131.6 153.7A75 75 0 0 0 116.6 170.9Z" fill="#D6AD23" stroke="#F6F9F8" stroke-width="2" stroke-linejoin="round" ecmeta_series_index="0" ecmeta_data_index="1" ecmeta_ssr_type="chart" ecmeta_silent="true" class="zr2-cls-2" />
+<path d="M114.9 133.8A101 101 0 0 1 136.6 119.8L147.8 143.3A75 75 0 0 0 131.6 153.7Z" fill="#31A7B5" stroke="#F6F9F8" stroke-width="2" stroke-linejoin="round" ecmeta_series_index="0" ecmeta_data_index="2" ecmeta_ssr_type="chart" ecmeta_silent="true" class="zr2-cls-2" />
+<path d="M136.6 119.8A101 101 0 0 1 152.2 113.9L159.3 138.9A75 75 0 0 0 147.8 143.3Z" fill="#A881D6" stroke="#F6F9F8" stroke-width="2" stroke-linejoin="round" ecmeta_series_index="0" ecmeta_data_index="3" ecmeta_ssr_type="chart" ecmeta_silent="true" class="zr2-cls-2" />
+<path d="M152.2 113.9A101 101 0 0 1 161.9 111.6L166.6 137.2A75 75 0 0 0 159.3 138.9Z" fill="#43B783" stroke="#F6F9F8" stroke-width="2" stroke-linejoin="round" ecmeta_series_index="0" ecmeta_data_index="4" ecmeta_ssr_type="chart" ecmeta_silent="true" class="zr2-cls-2" />
+<path d="M161.9 111.6A101 101 0 0 1 180 110L180 136A75 75 0 0 0 166.6 137.2Z" fill="#899995" stroke="#F6F9F8" stroke-width="2" stroke-linejoin="round" ecmeta_series_index="0" ecmeta_data_index="5" ecmeta_ssr_type="chart" ecmeta_silent="true" class="zr2-cls-2" />
+<path d="M100 558A48 48 0 1 1 86.7 559.9L89.8 570.4A37 37 0 1 0 100 569Z" fill="#438FD3" stroke="#F6F9F8" stroke-width="2" stroke-linejoin="round" ecmeta_series_index="1" ecmeta_data_index="0" ecmeta_ssr_type="chart" ecmeta_silent="true" class="zr2-cls-2" />
+<path d="M86.7 559.9A48 48 0 0 1 100 558L100 569A37 37 0 0 0 89.8 570.4Z" fill="#E2EAE6" stroke="#F6F9F8" stroke-width="2" stroke-linejoin="round" ecmeta_series_index="1" ecmeta_data_index="1" ecmeta_ssr_type="chart" ecmeta_silent="true" class="zr2-cls-2" />
+<path d="M260 558A48 48 0 1 1 255.4 653.8L256.5 642.8A37 37 0 1 0 260 569Z" fill="#438FD3" stroke="#F6F9F8" stroke-width="2" stroke-linejoin="round" ecmeta_series_index="2" ecmeta_data_index="0" ecmeta_ssr_type="chart" ecmeta_silent="true" class="zr2-cls-2" />
+<path d="M255.4 653.8A48 48 0 0 1 260 558L260 569A37 37 0 0 0 256.5 642.8Z" fill="#E2EAE6" stroke="#F6F9F8" stroke-width="2" stroke-linejoin="round" ecmeta_series_index="2" ecmeta_data_index="1" ecmeta_ssr_type="chart" ecmeta_silent="true" class="zr2-cls-2" />
+<path d="M100 728A48 48 0 1 1 90.2 729L92.5 739.8A37 37 0 1 0 100 739Z" fill="#438FD3" stroke="#F6F9F8" stroke-width="2" stroke-linejoin="round" ecmeta_series_index="3" ecmeta_data_index="0" ecmeta_ssr_type="chart" ecmeta_silent="true" class="zr2-cls-2" />
+<path d="M90.2 729A48 48 0 0 1 100 728L100 739A37 37 0 0 0 92.5 739.8Z" fill="#E2EAE6" stroke="#F6F9F8" stroke-width="2" stroke-linejoin="round" ecmeta_series_index="3" ecmeta_data_index="1" ecmeta_ssr_type="chart" ecmeta_silent="true" class="zr2-cls-2" />
+<path d="M260 728A48 48 0 1 1 244.1 730.7L247.8 741.1A37 37 0 1 0 260 739Z" fill="#438FD3" stroke="#F6F9F8" stroke-width="2" stroke-linejoin="round" ecmeta_series_index="4" ecmeta_data_index="0" ecmeta_ssr_type="chart" ecmeta_silent="true" class="zr2-cls-2" />
+<path d="M244.1 730.7A48 48 0 0 1 260 728L260 739A37 37 0 0 0 247.8 741.1Z" fill="#E2EAE6" stroke="#F6F9F8" stroke-width="2" stroke-linejoin="round" ecmeta_series_index="4" ecmeta_data_index="1" ecmeta_ssr_type="chart" ecmeta_silent="true" class="zr2-cls-2" />
+<path d="M100 898A48 48 0 1 1 52.2 942L63.1 942.9A37 37 0 1 0 100 909Z" fill="#438FD3" stroke="#F6F9F8" stroke-width="2" stroke-linejoin="round" ecmeta_series_index="5" ecmeta_data_index="0" ecmeta_ssr_type="chart" ecmeta_silent="true" class="zr2-cls-2" />
+<path d="M52.2 942A48 48 0 0 1 100 898L100 909A37 37 0 0 0 63.1 942.9Z" fill="#E2EAE6" stroke="#F6F9F8" stroke-width="2" stroke-linejoin="round" ecmeta_series_index="5" ecmeta_data_index="1" ecmeta_ssr_type="chart" ecmeta_silent="true" class="zr2-cls-2" />
+<path d="M260 898A48 48 0 1 1 216.3 926.2L226.3 930.7A37 37 0 1 0 260 909Z" fill="#438FD3" stroke="#F6F9F8" stroke-width="2" stroke-linejoin="round" ecmeta_series_index="6" ecmeta_data_index="0" ecmeta_ssr_type="chart" ecmeta_silent="true" class="zr2-cls-2" />
+<path d="M216.3 926.2A48 48 0 0 1 260 898L260 909A37 37 0 0 0 226.3 930.7Z" fill="#E2EAE6" stroke="#F6F9F8" stroke-width="2" stroke-linejoin="round" ecmeta_series_index="6" ecmeta_data_index="1" ecmeta_ssr_type="chart" ecmeta_silent="true" class="zr2-cls-2" />
+<style>
+.zr2-cls-2:hover {
+pointer-events:none;
+}
+
+
+
+</style>
 </svg>
