@@ -20,13 +20,13 @@ Collection records, scale and photo evidence, offline capture and Lightning payo
 
 Fastlight Lightning-address validation, payment-list exports and batch-payment tools. The repository also contains CBAF community-fund workflows.
 
-[Source](https://github.com/Afribit-Africa/tools) | [Open the app](https://tools.afribit.africa)
+[Source](https://github.com/Afribit-Kibera/tools) | [Open the app](https://tools.afribit.africa)
 
 ### BTCReg
 
 Merchant registration, GPS capture, verification and reviewed publication to OpenStreetMap for discovery through BTC Map.
 
-[Source](https://github.com/Afribit-Africa/bitmap) | [Open the app](https://register.afribit.africa)
+[Source](https://github.com/Afribit-Kibera/bitmap) | [Open the app](https://register.afribit.africa)
 
 ### 3 West Satenet Tools
 
@@ -38,7 +38,12 @@ Portal, payment and network-management software supporting a community-run netwo
 
 Our public website, merchant directory, project pages and Bitcoin audio education with synchronised text.
 
-[Source](https://github.com/Afribit-Africa/Website) | [Website](https://afribit.africa) | [Bitcoin Studio](https://afribit.africa/studio)
+[Source](https://github.com/Afribit-Kibera/Website) | [Website](https://afribit.africa) | [Bitcoin Studio](https://afribit.africa/studio)
+
+## Experimental Projects
+
+- **[Afribit Pay](https://github.com/Afribit-Kibera/afribit-wallet):** pre-launch wallet work based on Blink, exploring Bitcoin and M-Pesa payments. The repository retains its upstream relationship and credits.
+- **[Afribit NFC](https://github.com/Afribit-Kibera/nfc):** a React Native and backend prototype for contactless card setup with NTAG424 and BTCPay Server integrations.
 
 ## Built Around Local Work
 
@@ -52,8 +57,6 @@ The 3 West Satenet tools are being piloted with local operators. Afribit is not 
 ## Collaborations and Credits
 
 Our local economic intelligence research is developed with [Insats](https://insats.org). The website's Bitcoin Studio credits **Btrust Pathways** for the learning material and **Gemini** for the AI-generated audio.
-
-[Afribit Pay](https://github.com/Afribit-Africa/afribit-wallet) is a pre-launch fork of Blink. Its README documents the upstream credits and project scope.
 
 ## Contribute
 
