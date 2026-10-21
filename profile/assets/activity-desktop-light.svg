@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="314" viewBox="0 0 900 314" role="img" aria-labelledby="title description">
+  <title id="title">Public build activity</title>
+  <desc id="description">Weekly commits in original public project repositories. The current week is partial; fork and private history are excluded.</desc>
+  <rect x="0" y="0" width="900" height="314" fill="#F6F9F8" rx="6" />
+  <text x="32" y="40" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Public build activity</text>
+  <text x="32" y="65" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400">Weekly commits / current week partial</text>
+  <line x1="32" y1="236" x2="868" y2="236" stroke="#D6E1DA" stroke-width="1" />
+  <rect x="35.0" y="234.72340425531914" width="62.66666666666667" height="1.2765957446808511" fill="#146A48" rx="2" />
+  <text x="66.33333333333334" y="226.72340425531914" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" text-anchor="middle">1</text>
+  <rect x="104.66666666666667" y="236.0" width="62.66666666666667" height="0.0" fill="#146A48" rx="2" />
+  <text x="136.0" y="228.0" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" text-anchor="middle">0</text>
+  <rect x="174.33333333333334" y="236.0" width="62.66666666666667" height="0.0" fill="#146A48" rx="2" />
+  <text x="205.66666666666669" y="228.0" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" text-anchor="middle">0</text>
+  <rect x="244.0" y="224.51063829787233" width="62.66666666666667" height="11.48936170212766" fill="#146A48" rx="2" />
+  <text x="275.3333333333333" y="216.51063829787233" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" text-anchor="middle">9</text>
+  <rect x="313.6666666666667" y="224.51063829787233" width="62.66666666666667" height="11.48936170212766" fill="#146A48" rx="2" />
+  <text x="345.0" y="216.51063829787233" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" text-anchor="middle">9</text>
+  <rect x="383.33333333333337" y="211.74468085106383" width="62.66666666666667" height="24.25531914893617" fill="#146A48" rx="2" />
+  <text x="414.6666666666667" y="203.74468085106383" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" text-anchor="middle">19</text>
+  <rect x="453.0" y="233.4468085106383" width="62.66666666666667" height="2.5531914893617023" fill="#146A48" rx="2" />
+  <text x="484.3333333333333" y="225.4468085106383" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" text-anchor="middle">2</text>
+  <rect x="522.6666666666667" y="236.0" width="62.66666666666667" height="0.0" fill="#146A48" rx="2" />
+  <text x="554.0000000000001" y="228.0" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" text-anchor="middle">0</text>
+  <rect x="592.3333333333334" y="116.0" width="62.66666666666667" height="120.0" fill="#146A48" rx="2" />
+  <text x="623.6666666666667" y="108.0" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" text-anchor="middle">94</text>
+  <rect x="662.0" y="211.74468085106383" width="62.66666666666667" height="24.25531914893617" fill="#146A48" rx="2" />
+  <text x="693.3333333333334" y="203.74468085106383" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" text-anchor="middle">19</text>
+  <rect x="731.6666666666667" y="230.89361702127658" width="62.66666666666667" height="5.1063829787234045" fill="#146A48" rx="2" />
+  <text x="763.0000000000001" y="222.89361702127658" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" text-anchor="middle">4</text>
+  <rect x="801.3333333333334" y="234.72340425531914" width="62.66666666666667" height="1.2765957446808511" fill="#146A48" rx="2" />
+  <text x="832.6666666666667" y="226.72340425531914" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" text-anchor="middle">1</text>
+  <text x="32" y="260" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" text-anchor="start">02 Aug</text>
+  <text x="450.0" y="260" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" text-anchor="middle">13 Sep</text>
+  <text x="868" y="260" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" text-anchor="end">18 Oct</text>
+  <text x="32" y="296" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400">6 original public repositories. Not an impact measure.</text>
+</svg>

@@ -1,0 +1,45 @@
+name: Refresh portfolio
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '37 5 * * 2'
+  push:
+    branches: [main]
+    paths:
+      - scripts/**
+      - profile/projects.json
+      - profile/README.template.md
+      - .github/workflows/refresh-profile.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-portfolio
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: true
+      - name: Test collector and rendering boundaries
+        run: python3 scripts/test_profile.py
+      - name: Collect public data and render profile
+        run: python3 scripts/refresh_profile.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - name: Check generated assets
+        run: python3 scripts/test_profile.py
+      - name: Publish only generated profile files
+        run: |
+          git add profile/README.md profile/data/public-stats.json profile/assets/*.svg
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'docs: refresh public portfolio data'
+          git push origin HEAD:main

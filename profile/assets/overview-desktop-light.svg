@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="154" viewBox="0 0 900 154" role="img" aria-labelledby="title description">
+  <title id="title">Afribit project overview</title>
+  <desc id="description">Counts from the public catalogue. Private source and activity are not collected.</desc>
+  <rect x="0" y="0" width="900" height="154" fill="#F6F9F8" rx="6" />
+  <text x="32" y="68" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700">10</text>
+  <text x="32" y="102" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400">Projects in the catalogue</text>
+  <line x1="296" y1="30" x2="296" y2="116" stroke="#D6E1DA" stroke-width="1" />
+  <text x="324" y="68" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700">7</text>
+  <text x="324" y="102" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400">Public repositories</text>
+  <line x1="588" y1="30" x2="588" y2="116" stroke="#D6E1DA" stroke-width="1" />
+  <text x="616" y="68" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700">6</text>
+  <text x="616" y="102" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400">Non-fork public repositories</text>
+</svg>

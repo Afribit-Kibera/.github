@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="568" viewBox="0 0 900 568" role="img" aria-labelledby="title description">
+  <title id="title">Public code mix</title>
+  <desc id="description">Language percentages are shares of GitHub-detected source bytes, excluding private repositories and the Blink fork.</desc>
+  <rect x="0" y="0" width="900" height="568" fill="#F6F9F8" rx="6" />
+  <text x="32" y="40" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Public code mix</text>
+  <text x="32" y="66" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400">Detected source bytes, not authorship.</text>
+  <rect x="32" y="88" width="836" height="18" fill="#E2EAE6" rx="2" />
+  <rect x="32" y="88" width="702.124" height="18" fill="#3178C6" />
+  <rect x="734.124" y="88" width="40.614" height="18" fill="#D5AD13" />
+  <rect x="774.739" y="88" width="34.128" height="18" fill="#32A4B7" />
+  <rect x="808.867" y="88" width="22.004" height="18" fill="#8A60CF" />
+  <rect x="830.871" y="88" width="13.17" height="18" fill="#30A46C" />
+  <rect x="844.041" y="88" width="23.959" height="18" fill="#87918E" />
+  <rect x="32" y="129" width="10" height="10" fill="#3178C6" rx="1" />
+  <text x="49" y="140" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400">TypeScript</text>
+  <text x="282" y="140" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="end">84.0%</text>
+  <rect x="320" y="129" width="10" height="10" fill="#D5AD13" rx="1" />
+  <text x="337" y="140" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400">JavaScript</text>
+  <text x="570" y="140" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="end">4.9%</text>
+  <rect x="608" y="129" width="10" height="10" fill="#32A4B7" rx="1" />
+  <text x="625" y="140" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400">Python</text>
+  <text x="858" y="140" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="end">4.1%</text>
+  <rect x="32" y="163" width="10" height="10" fill="#8A60CF" rx="1" />
+  <text x="49" y="174" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400">CSS</text>
+  <text x="282" y="174" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="end">2.6%</text>
+  <rect x="320" y="163" width="10" height="10" fill="#30A46C" rx="1" />
+  <text x="337" y="174" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400">RouterOS Script</text>
+  <text x="570" y="174" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="end">1.6%</text>
+  <rect x="608" y="163" width="10" height="10" fill="#87918E" rx="1" />
+  <text x="625" y="174" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400">Other</text>
+  <text x="858" y="174" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="end">2.9%</text>
+  <line x1="32" y1="214" x2="868" y2="214" stroke="#D6E1DA" stroke-width="1" />
+  <text x="32" y="238" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">Taka Sats</text>
+  <rect x="296" y="225" width="572" height="15" fill="#E2EAE6" rx="2" />
+  <rect x="296" y="225" width="546.492" height="15" fill="#3178C6" />
+  <rect x="842.492" y="225" width="14.255" height="15" fill="#D5AD13" />
+  <rect x="856.747" y="225" width="0.0" height="15" fill="#32A4B7" />
+  <rect x="856.747" y="225" width="1.167" height="15" fill="#8A60CF" />
+  <rect x="857.914" y="225" width="0.0" height="15" fill="#30A46C" />
+  <rect x="857.914" y="225" width="10.086" height="15" fill="#87918E" />
+  <text x="32" y="286" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">3 West Satenet</text>
+  <rect x="296" y="273" width="572" height="15" fill="#E2EAE6" rx="2" />
+  <rect x="296" y="273" width="294.728" height="15" fill="#3178C6" />
+  <rect x="590.728" y="273" width="49.108" height="15" fill="#D5AD13" />
+  <rect x="639.836" y="273" width="118.998" height="15" fill="#32A4B7" />
+  <rect x="758.834" y="273" width="25.444" height="15" fill="#8A60CF" />
+  <rect x="784.278" y="273" width="45.923" height="15" fill="#30A46C" />
+  <rect x="830.201" y="273" width="37.799" height="15" fill="#87918E" />
+  <text x="32" y="334" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">Afribitools</text>
+  <rect x="296" y="321" width="572" height="15" fill="#E2EAE6" rx="2" />
+  <rect x="296" y="321" width="553.306" height="15" fill="#3178C6" />
+  <rect x="849.306" y="321" width="1.743" height="15" fill="#D5AD13" />
+  <rect x="851.049" y="321" width="0.0" height="15" fill="#32A4B7" />
+  <rect x="851.049" y="321" width="9.247" height="15" fill="#8A60CF" />
+  <rect x="860.296" y="321" width="0.0" height="15" fill="#30A46C" />
+  <rect x="860.296" y="321" width="7.704" height="15" fill="#87918E" />
+  <text x="32" y="382" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">BTCReg</text>
+  <rect x="296" y="369" width="572" height="15" fill="#E2EAE6" rx="2" />
+  <rect x="296" y="369" width="541.343" height="15" fill="#3178C6" />
+  <rect x="837.343" y="369" width="4.856" height="15" fill="#D5AD13" />
+  <rect x="842.198" y="369" width="0.0" height="15" fill="#32A4B7" />
+  <rect x="842.198" y="369" width="7.405" height="15" fill="#8A60CF" />
+  <rect x="849.604" y="369" width="0.0" height="15" fill="#30A46C" />
+  <rect x="849.604" y="369" width="18.396" height="15" fill="#87918E" />
+  <text x="32" y="430" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">Website &amp; Bitcoin Studio</text>
+  <rect x="296" y="417" width="572" height="15" fill="#E2EAE6" rx="2" />
+  <rect x="296" y="417" width="436.669" height="15" fill="#3178C6" />
+  <rect x="732.669" y="417" width="78.75" height="15" fill="#D5AD13" />
+  <rect x="811.42" y="417" width="0.0" height="15" fill="#32A4B7" />
+  <rect x="811.42" y="417" width="52.824" height="15" fill="#8A60CF" />
+  <rect x="864.244" y="417" width="0.0" height="15" fill="#30A46C" />
+  <rect x="864.244" y="417" width="3.756" height="15" fill="#87918E" />
+  <text x="32" y="478" fill="#15231D" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">Afribit NFC</text>
+  <rect x="296" y="465" width="572" height="15" fill="#E2EAE6" rx="2" />
+  <rect x="296" y="465" width="467.732" height="15" fill="#3178C6" />
+  <rect x="763.732" y="465" width="55.256" height="15" fill="#D5AD13" />
+  <rect x="818.988" y="465" width="0.0" height="15" fill="#32A4B7" />
+  <rect x="818.988" y="465" width="0.0" height="15" fill="#8A60CF" />
+  <rect x="818.988" y="465" width="0.0" height="15" fill="#30A46C" />
+  <rect x="818.988" y="465" width="49.012" height="15" fill="#87918E" />
+  <text x="32" y="544" fill="#53655D" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400">Private source and the Blink fork are excluded.</text>
+</svg>

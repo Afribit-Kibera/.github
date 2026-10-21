@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-21T06:24:03+00:00",
+  "scope": "Public project repositories only; excludes .github and private source. Forks are excluded from language, activity and contributor aggregates.",
+  "showcased_projects": 10,
+  "public_repositories": 7,
+  "original_repositories": 6,
+  "repositories": [
+    {
+      "name": "taka-sats",
+      "full_name": "Afribit-Kibera/taka-sats",
+      "html_url": "https://github.com/Afribit-Kibera/taka-sats",
+      "fork": false,
+      "default_branch": "main",
+      "pushed_at": "2026-10-15T09:23:42Z",
+      "project": "Taka Sats",
+      "languages": {
+        "TypeScript": 1915763,
+        "JavaScript": 49972,
+        "Shell": 23297,
+        "PLpgSQL": 10774,
+        "CSS": 4091,
+        "Dockerfile": 1286
+      }
+    },
+    {
+      "name": "Afribit-Wifi",
+      "full_name": "Afribit-Kibera/Afribit-Wifi",
+      "html_url": "https://github.com/Afribit-Kibera/Afribit-Wifi",
+      "fork": false,
+      "default_branch": "main",
+      "pushed_at": "2026-10-07T06:42:33Z",
+      "project": "3 West Satenet",
+      "languages": {
+        "TypeScript": 584179,
+        "Python": 235866,
+        "JavaScript": 97336,
+        "RouterOS Script": 91023,
+        "HTML": 51889,
+        "CSS": 50433,
+        "PowerShell": 21152,
+        "Shell": 1880
+      }
+    },
+    {
+      "name": "tools",
+      "full_name": "Afribit-Kibera/tools",
+      "html_url": "https://github.com/Afribit-Kibera/tools",
+      "fork": false,
+      "default_branch": "main",
+      "pushed_at": "2026-09-15T09:36:45Z",
+      "project": "Afribitools",
+      "languages": {
+        "TypeScript": 956268,
+        "CSS": 15982,
+        "PowerShell": 6360,
+        "PLpgSQL": 5618,
+        "JavaScript": 3012,
+        "Shell": 1336
+      }
+    },
+    {
+      "name": "bitmap",
+      "full_name": "Afribit-Kibera/bitmap",
+      "html_url": "https://github.com/Afribit-Kibera/bitmap",
+      "fork": false,
+      "default_branch": "main",
+      "pushed_at": "2025-12-21T08:52:59Z",
+      "project": "BTCReg",
+      "languages": {
+        "TypeScript": 658569,
+        "HTML": 22380,
+        "CSS": 9009,
+        "JavaScript": 5907
+      }
+    },
+    {
+      "name": "Website",
+      "full_name": "Afribit-Kibera/Website",
+      "html_url": "https://github.com/Afribit-Kibera/Website",
+      "fork": false,
+      "default_branch": "main",
+      "pushed_at": "2026-10-19T14:52:24Z",
+      "project": "Website & Bitcoin Studio",
+      "languages": {
+        "TypeScript": 599806,
+        "JavaScript": 108171,
+        "CSS": 72559,
+        "PLpgSQL": 5159
+      }
+    },
+    {
+      "name": "afribit-wallet",
+      "full_name": "Afribit-Kibera/afribit-wallet",
+      "html_url": "https://github.com/Afribit-Kibera/afribit-wallet",
+      "fork": true,
+      "default_branch": "main",
+      "pushed_at": "2026-07-26T21:06:50Z",
+      "project": "Afribit Pay"
+    },
+    {
+      "name": "nfc",
+      "full_name": "Afribit-Kibera/nfc",
+      "html_url": "https://github.com/Afribit-Kibera/nfc",
+      "fork": false,
+      "default_branch": "main",
+      "pushed_at": "2025-11-27T20:27:18Z",
+      "project": "Afribit NFC",
+      "languages": {
+        "TypeScript": 137927,
+        "JavaScript": 16294,
+        "PowerShell": 8612,
+        "Java": 3116,
+        "Shell": 2710,
+        "Procfile": 15
+      }
+    }
+  ],
+  "languages": {
+    "TypeScript": 4852512,
+    "JavaScript": 280692,
+    "Python": 235866,
+    "CSS": 152074,
+    "RouterOS Script": 91023,
+    "HTML": 74269,
+    "PowerShell": 36124,
+    "Shell": 29223,
+    "PLpgSQL": 21551,
+    "Java": 3116,
+    "Dockerfile": 1286,
+    "Procfile": 15
+  },
+  "contributors": [
+    {
+      "login": "novyrix",
+      "url": "https://github.com/novyrix",
+      "avatar": "https://avatars.githubusercontent.com/u/207522836?v=4",
+      "automation": false,
+      "repositories": [
+        "taka-sats",
+        "Afribit-Wifi",
+        "tools",
+        "Website"
+      ]
+    },
+    {
+      "login": "codex",
+      "url": "https://github.com/codex",
+      "avatar": "https://avatars.githubusercontent.com/u/267193182?v=4",
+      "automation": true,
+      "repositories": [
+        "Website"
+      ]
+    }
+  ],
+  "activity": {
+    "complete": true,
+    "unavailable_repositories": [],
+    "weeks": [
+      {
+        "week": "2026-08-02",
+        "commits": 1
+      },
+      {
+        "week": "2026-08-09",
+        "commits": 0
+      },
+      {
+        "week": "2026-08-16",
+        "commits": 0
+      },
+      {
+        "week": "2026-08-23",
+        "commits": 9
+      },
+      {
+        "week": "2026-08-30",
+        "commits": 9
+      },
+      {
+        "week": "2026-09-06",
+        "commits": 19
+      },
+      {
+        "week": "2026-09-13",
+        "commits": 2
+      },
+      {
+        "week": "2026-09-20",
+        "commits": 0
+      },
+      {
+        "week": "2026-09-27",
+        "commits": 94
+      },
+      {
+        "week": "2026-10-04",
+        "commits": 19
+      },
+      {
+        "week": "2026-10-11",
+        "commits": 4
+      },
+      {
+        "week": "2026-10-18",
+        "commits": 1
+      }
+    ]
+  }
+}

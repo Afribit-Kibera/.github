@@ -1,0 +1,16 @@
+{
+  "organisation": "Afribit-Kibera",
+  "projects": [
+    {"id":"taka-sats","name":"Taka Sats","repo":"taka-sats","group":"Community & field work","summary":"Offline-capable waste-work records, scale and photo evidence, and Lightning payout controls.","url":"https://taka.afribit.africa/docs","link_label":"Documentation"},
+    {"id":"community-network","name":"3 West Satenet","repo":"Afribit-Wifi","group":"Community & field work","summary":"Portal, payment and network-management tools for a locally operated network. Pilot software; Afribit is not the internet provider.","url":"https://wifi.afribit.africa","link_label":"Community portal"},
+    {"id":"tools","name":"Afribitools","repo":"tools","group":"Payments & local trade","summary":"Fastlight Lightning-address validation, clean payment-list exports and batch-payment tools.","url":"https://tools.afribit.africa","link_label":"Open app"},
+    {"id":"merchant-mapping","name":"BTCReg","repo":"bitmap","group":"Payments & local trade","summary":"GPS-first merchant registration, verification and reviewed OpenStreetMap publication for BTC Map discovery.","url":"https://register.afribit.africa","link_label":"Open app"},
+    {"id":"website","name":"Website & Bitcoin Studio","repo":"Website","group":"Learning & discovery","summary":"Our community website, merchant directory and Bitcoin audio education with synchronised text.","url":"https://afribit.africa/studio","link_label":"Bitcoin Studio"},
+    {"id":"ai","name":"Afribit AI","source":"private","group":"Learning & discovery","summary":"A Bitcoin education assistant shaped for Sheng, Kiswahili and English. Prototype.","url":"https://ai.afribit.africa","link_label":"Explore prototype"},
+    {"id":"console","name":"Afribit Console","source":"private","group":"Team tools","summary":"Administration tools for coordinating education sessions, programme records and day-to-day team work."},
+    {"id":"socials","name":"AfriBot for Socials","source":"private","group":"Team tools","summary":"Content preparation and social publishing workflows with human approval."},
+    {"id":"wallet","name":"Afribit Pay","repo":"afribit-wallet","group":"Experimental builds","summary":"Pre-launch wallet work based on Blink, exploring Bitcoin and M-Pesa payments. Upstream relationship and credits are retained."},
+    {"id":"nfc","name":"Afribit NFC","repo":"nfc","group":"Experimental builds","summary":"A React Native and backend prototype for NTAG424 contactless card setup and BTCPay Server integrations."}
+  ],
+  "automation_logins": ["codex", "github-actions[bot]", "dependabot[bot]", "copilot"]
+}
