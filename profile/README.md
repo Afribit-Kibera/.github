@@ -10,15 +10,35 @@ We build tools for the work around a Bitcoin circular economy: recording waste c
 
 ## Explore the Projects
 
-| Project | What it is for | Explore |
-| --- | --- | --- |
-| **Taka Sats** | Collection records, scale and photo evidence, offline capture and Lightning payout controls for community waste work. | [Code](https://github.com/Afribit-Kibera/taka-sats) / [Docs](https://taka.afribit.africa/docs) |
-| **Afribitools** | Fastlight Lightning-address validation, payment-list exports and batch-payment tools. The repository also contains CBAF community-fund workflows. | [Code](https://github.com/Afribit-Africa/tools) / [App](https://tools.afribit.africa) |
-| **BTCReg** | Merchant registration, GPS capture, verification and reviewed publication to OpenStreetMap for discovery through BTC Map. | [Code](https://github.com/Afribit-Africa/bitmap) / [App](https://register.afribit.africa) |
-| **3 West Satenet Tools** | Portal, payment and network-management software supporting a community-run network. Repository: `Afribit-Wifi`. | [Code](https://github.com/Afribit-Kibera/Afribit-Wifi) / [Portal](https://wifi.afribit.africa) |
-| **Afribit Website & Studio** | Our public website, merchant directory, project pages and Bitcoin audio education with synchronised text. | [Code](https://github.com/Afribit-Africa/Website) / [Website](https://afribit.africa) |
+### Taka Sats
 
-Project links lead to their current repository owners. Individual READMEs document setup, scope and deployment requirements.
+Collection records, scale and photo evidence, offline capture and Lightning payout controls for community waste work.
+
+[Source](https://github.com/Afribit-Kibera/taka-sats) | [Documentation](https://taka.afribit.africa/docs)
+
+### Afribitools
+
+Fastlight Lightning-address validation, payment-list exports and batch-payment tools. The repository also contains CBAF community-fund workflows.
+
+[Source](https://github.com/Afribit-Africa/tools) | [Open the app](https://tools.afribit.africa)
+
+### BTCReg
+
+Merchant registration, GPS capture, verification and reviewed publication to OpenStreetMap for discovery through BTC Map.
+
+[Source](https://github.com/Afribit-Africa/bitmap) | [Open the app](https://register.afribit.africa)
+
+### 3 West Satenet Tools
+
+Portal, payment and network-management software supporting a community-run network. Repository: `Afribit-Wifi`.
+
+[Source](https://github.com/Afribit-Kibera/Afribit-Wifi) | [Community portal](https://wifi.afribit.africa)
+
+### Afribit Website & Studio
+
+Our public website, merchant directory, project pages and Bitcoin audio education with synchronised text.
+
+[Source](https://github.com/Afribit-Africa/Website) | [Website](https://afribit.africa) | [Bitcoin Studio](https://afribit.africa/studio)
 
 ## Built Around Local Work
 
@@ -27,13 +47,13 @@ Project links lead to their current repository owners. Individual READMEs docume
 - **Community ownership:** local operators make network decisions; Afribit contributes tools and technical support.
 - **Useful records:** evidence that collection teams, merchants and programme organisers can inspect.
 
-The 3 West Satenet software is being piloted; it is not a general internet service operated by Afribit. **Kibera Mesh** explores local calling and chat inside the network, rather than claiming those services are already available.
+The 3 West Satenet tools are being piloted with local operators. Afribit is not an internet service provider. **Kibera Mesh** is a research track for local calling and chat, not a released communications service.
 
 ## Collaborations and Credits
 
 Our local economic intelligence research is developed with [Insats](https://insats.org). The website's Bitcoin Studio credits **Btrust Pathways** for the learning material and **Gemini** for the AI-generated audio.
 
-Wallet work in [afribit-wallet](https://github.com/Afribit-Africa/afribit-wallet) builds on Blink and remains pre-launch. The upstream relationship and credits belong with the project; it is not presented here as a production wallet.
+[Afribit Pay](https://github.com/Afribit-Africa/afribit-wallet) is a pre-launch fork of Blink. Its README documents the upstream credits and project scope.
 
 ## Contribute
 
