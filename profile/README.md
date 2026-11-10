@@ -96,19 +96,19 @@ A React Native and backend prototype for NTAG424 contactless card setup and BTCP
 
 <!-- code-mix:start -->
 <picture>
-  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-mobile-dark.svg?v=f97ee5fcbc3f">
-  <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-mobile-light.svg?v=9e9867ebc26e">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-desktop-dark.svg?v=05a04528f02a">
-  <img src="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-desktop-light.svg?v=a1da1e41cea6" alt="Language composition and leading language per public project; private source and the Blink fork are excluded." width="100%">
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-mobile-dark.svg?v=0faa67b7cb79">
+  <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-mobile-light.svg?v=a8578ccc8a21">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-desktop-dark.svg?v=3171c2d31c48">
+  <img src="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-desktop-light.svg?v=b088bfe876c1" alt="Language composition and leading language per public project; private source and the Blink fork are excluded." width="100%">
 </picture>
 <!-- code-mix:end -->
 
 <!-- activity:start -->
 <picture>
-  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-mobile-dark.svg?v=ce6f0bdc6052">
-  <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-mobile-light.svg?v=a3c0785f20fb">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-desktop-dark.svg?v=8d1c0bff80f2">
-  <img src="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-desktop-light.svg?v=defecc664c00" alt="Weekly public commit trend and repository heatmap; current week is partial, not a measure of community impact." width="100%">
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-mobile-dark.svg?v=a69968c4cc3d">
+  <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-mobile-light.svg?v=d5ebef698acb">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-desktop-dark.svg?v=08284d6ee518">
+  <img src="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-desktop-light.svg?v=3370757c3ddf" alt="Weekly public commit trend and repository heatmap; current week is partial, not a measure of community impact." width="100%">
 </picture>
 <!-- activity:end -->
 
@@ -116,7 +116,7 @@ A React Native and backend prototype for NTAG424 contactless card setup and BTCP
 <summary>Data, scope and text summary</summary>
 
 <!-- data-note:start -->
-Snapshot: **2026-11-03 UTC**. TypeScript 84.0%, JavaScript 4.9%, Python 4.1%, CSS 2.6%, RouterOS Script 1.6%.
+Snapshot: **2026-11-10 UTC**. TypeScript 85.1%, JavaScript 4.8%, Python 4.2%, CSS 1.9%, RouterOS Script 1.5%.
 
 [Public data](https://github.com/Afribit-Kibera/.github/blob/main/profile/data/public-stats.json) | [Calculation and refresh notes](https://github.com/Afribit-Kibera/.github/blob/main/profile/MAINTENANCE.md). Private activity and inherited wallet history are excluded.
 <!-- data-note:end -->
@@ -126,9 +126,10 @@ Snapshot: **2026-11-03 UTC**. TypeScript 84.0%, JavaScript 4.9%, Python 4.1%, CS
 ## Contributors
 
 <!-- contributors:start -->
+<a href="https://github.com/Afribit-Africa"><img src="https://avatars.githubusercontent.com/u/219881998?v=4&amp;s=128" width="64" height="64" alt="Afribit-Africa"></a>
 <a href="https://github.com/novyrix"><img src="https://avatars.githubusercontent.com/u/207522836?v=4&amp;s=128" width="64" height="64" alt="novyrix"></a>
 
-Public code contributions: [@novyrix](https://github.com/novyrix).
+Public code contributions: [@Afribit-Africa](https://github.com/Afribit-Africa), [@novyrix](https://github.com/novyrix).
 
 Attribution comes from the original public repositories, not a complete team roster. Blink's upstream contributors remain credited in the wallet repository.
 <!-- contributors:end -->

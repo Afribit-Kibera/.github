@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-03T12:59:12+00:00",
+  "generated_at": "2026-11-10T13:44:56+00:00",
   "scope": "Public project repositories only; excludes .github and private source. Forks are excluded from language, activity and contributor aggregates.",
   "showcased_projects": 10,
   "public_repositories": 7,
@@ -29,17 +29,18 @@
       "html_url": "https://github.com/Afribit-Kibera/Afribit-Wifi",
       "fork": false,
       "default_branch": "main",
-      "pushed_at": "2026-10-07T06:42:33Z",
+      "pushed_at": "2026-11-09T15:51:23Z",
       "project": "3 West Satenet",
       "languages": {
-        "TypeScript": 584179,
-        "Python": 235866,
-        "JavaScript": 97336,
-        "RouterOS Script": 91023,
-        "HTML": 51889,
-        "CSS": 50433,
+        "TypeScript": 812854,
+        "Python": 253220,
+        "JavaScript": 103317,
+        "RouterOS Script": 87748,
+        "HTML": 32379,
         "PowerShell": 21152,
-        "Shell": 1880
+        "CSS": 12733,
+        "Shell": 5420,
+        "PLpgSQL": 555
       }
     },
     {
@@ -80,7 +81,7 @@
       "html_url": "https://github.com/Afribit-Kibera/Website",
       "fork": false,
       "default_branch": "main",
-      "pushed_at": "2026-10-19T14:52:24Z",
+      "pushed_at": "2026-11-09T10:11:52Z",
       "project": "Website & Bitcoin Studio",
       "languages": {
         "TypeScript": 599806,
@@ -117,20 +118,29 @@
     }
   ],
   "languages": {
-    "TypeScript": 4853033,
-    "JavaScript": 280692,
-    "Python": 235866,
-    "CSS": 152621,
-    "RouterOS Script": 91023,
-    "HTML": 74269,
+    "TypeScript": 5081708,
+    "JavaScript": 286673,
+    "Python": 253220,
+    "CSS": 114921,
+    "RouterOS Script": 87748,
+    "HTML": 54759,
     "PowerShell": 36124,
-    "Shell": 29223,
-    "PLpgSQL": 21551,
+    "Shell": 32763,
+    "PLpgSQL": 22106,
     "Java": 3116,
     "Dockerfile": 1393,
     "Procfile": 15
   },
   "contributors": [
+    {
+      "login": "Afribit-Africa",
+      "url": "https://github.com/Afribit-Africa",
+      "avatar": "https://avatars.githubusercontent.com/u/219881998?v=4",
+      "automation": false,
+      "repositories": [
+        "Afribit-Wifi"
+      ]
+    },
     {
       "login": "novyrix",
       "url": "https://github.com/novyrix",
@@ -149,10 +159,6 @@
     "unavailable_repositories": [],
     "method": "Default-branch non-merge commits by committer date; UTC Sunday weeks; all authors included",
     "weeks": [
-      {
-        "week": "2026-08-16",
-        "commits": 0
-      },
       {
         "week": "2026-08-23",
         "commits": 9
@@ -196,6 +202,10 @@
       {
         "week": "2026-11-01",
         "commits": 0
+      },
+      {
+        "week": "2026-11-08",
+        "commits": 7
       }
     ],
     "repositories": [
@@ -203,7 +213,6 @@
         "repository": "taka-sats",
         "project": "Taka Sats",
         "commits": [
-          0,
           0,
           9,
           16,
@@ -214,6 +223,7 @@
           4,
           2,
           0,
+          0,
           0
         ]
       },
@@ -221,7 +231,6 @@
         "repository": "Afribit-Wifi",
         "project": "3 West Satenet",
         "commits": [
-          0,
           9,
           0,
           0,
@@ -232,7 +241,8 @@
           0,
           0,
           0,
-          0
+          0,
+          6
         ]
       },
       {
@@ -242,8 +252,8 @@
           0,
           0,
           0,
-          0,
           2,
+          0,
           0,
           0,
           0,
@@ -277,7 +287,6 @@
         "commits": [
           0,
           0,
-          0,
           3,
           0,
           0,
@@ -286,7 +295,8 @@
           0,
           1,
           0,
-          0
+          0,
+          1
         ]
       },
       {
