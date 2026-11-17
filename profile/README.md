@@ -96,19 +96,19 @@ A React Native and backend prototype for NTAG424 contactless card setup and BTCP
 
 <!-- code-mix:start -->
 <picture>
-  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-mobile-dark.svg?v=0faa67b7cb79">
-  <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-mobile-light.svg?v=a8578ccc8a21">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-desktop-dark.svg?v=3171c2d31c48">
-  <img src="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-desktop-light.svg?v=b088bfe876c1" alt="Language composition and leading language per public project; private source and the Blink fork are excluded." width="100%">
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-mobile-dark.svg?v=fb18b42333d0">
+  <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-mobile-light.svg?v=24515904aff9">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-desktop-dark.svg?v=fb29ba037801">
+  <img src="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/code-mix-desktop-light.svg?v=f8ca4b722a72" alt="Language composition and leading language per public project; private source and the Blink fork are excluded." width="100%">
 </picture>
 <!-- code-mix:end -->
 
 <!-- activity:start -->
 <picture>
-  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-mobile-dark.svg?v=a69968c4cc3d">
-  <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-mobile-light.svg?v=d5ebef698acb">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-desktop-dark.svg?v=08284d6ee518">
-  <img src="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-desktop-light.svg?v=3370757c3ddf" alt="Weekly public commit trend and repository heatmap; current week is partial, not a measure of community impact." width="100%">
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-mobile-dark.svg?v=4aca596dec46">
+  <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-mobile-light.svg?v=38880cc263d9">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-desktop-dark.svg?v=5f4571907cea">
+  <img src="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-desktop-light.svg?v=ed60cb8f05ce" alt="Weekly public commit trend and repository heatmap; current week is partial, not a measure of community impact." width="100%">
 </picture>
 <!-- activity:end -->
 
@@ -116,7 +116,7 @@ A React Native and backend prototype for NTAG424 contactless card setup and BTCP
 <summary>Data, scope and text summary</summary>
 
 <!-- data-note:start -->
-Snapshot: **2026-11-10 UTC**. TypeScript 85.1%, JavaScript 4.8%, Python 4.2%, CSS 1.9%, RouterOS Script 1.5%.
+Snapshot: **2026-11-17 UTC**. TypeScript 85.1%, JavaScript 4.9%, Python 4.2%, CSS 1.9%, RouterOS Script 1.4%.
 
 [Public data](https://github.com/Afribit-Kibera/.github/blob/main/profile/data/public-stats.json) | [Calculation and refresh notes](https://github.com/Afribit-Kibera/.github/blob/main/profile/MAINTENANCE.md). Private activity and inherited wallet history are excluded.
 <!-- data-note:end -->
