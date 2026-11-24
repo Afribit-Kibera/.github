@@ -105,10 +105,10 @@ A React Native and backend prototype for NTAG424 contactless card setup and BTCP
 
 <!-- activity:start -->
 <picture>
-  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-mobile-dark.svg?v=4aca596dec46">
-  <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-mobile-light.svg?v=38880cc263d9">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-desktop-dark.svg?v=5f4571907cea">
-  <img src="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-desktop-light.svg?v=ed60cb8f05ce" alt="Weekly public commit trend and repository heatmap; current week is partial, not a measure of community impact." width="100%">
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-mobile-dark.svg?v=da61693045bc">
+  <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-mobile-light.svg?v=8de2313d6ae3">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-desktop-dark.svg?v=f5aeb8bc6a4c">
+  <img src="https://raw.githubusercontent.com/Afribit-Kibera/.github/main/profile/assets/activity-desktop-light.svg?v=0ec3ddda1fd8" alt="Weekly public commit trend and repository heatmap; current week is partial, not a measure of community impact." width="100%">
 </picture>
 <!-- activity:end -->
 
@@ -116,7 +116,7 @@ A React Native and backend prototype for NTAG424 contactless card setup and BTCP
 <summary>Data, scope and text summary</summary>
 
 <!-- data-note:start -->
-Snapshot: **2026-11-17 UTC**. TypeScript 85.1%, JavaScript 4.9%, Python 4.2%, CSS 1.9%, RouterOS Script 1.4%.
+Snapshot: **2026-11-24 UTC**. TypeScript 85.1%, JavaScript 4.9%, Python 4.2%, CSS 1.9%, RouterOS Script 1.4%.
 
 [Public data](https://github.com/Afribit-Kibera/.github/blob/main/profile/data/public-stats.json) | [Calculation and refresh notes](https://github.com/Afribit-Kibera/.github/blob/main/profile/MAINTENANCE.md). Private activity and inherited wallet history are excluded.
 <!-- data-note:end -->
